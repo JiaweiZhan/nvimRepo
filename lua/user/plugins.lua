@@ -123,7 +123,7 @@ return packer.startup(function(use)
   use 'ggandor/lightspeed.nvim'
 
   -- zoom plugin
-  use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
+  use { "beauwilliams/focus.nvim", config = function() require("focus").setup({signcolumn=false}) end }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

@@ -80,7 +80,7 @@ lualine.setup({
 		lualine_a = { branch, diagnostics },
 		lualine_b = { mode },
 		-- lualine_c = {'b:vista_nearest_method_or_function'},
-		lualine_c = {
+		lualine_c = {{'filename', path=1, symbols = { unnamed = '' }},
       { gps.get_location, cond = gps.is_available },
     },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
@@ -92,7 +92,7 @@ lualine.setup({
 	inactive_sections = {
 		lualine_a = {},
 		lualine_b = {},
-		lualine_c = { "filename" },
+		lualine_c = {{'filename', path=1, symbols = { unnamed = '' }}},
 		lualine_x = { "location" },
 		lualine_y = {},
 		lualine_z = {},
